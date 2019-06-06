@@ -1,4 +1,4 @@
-/* Copyright 2017 Cole Markham, WoodKeys.click
+/* Copyright 2019 Cole Markham, WoodKeys.click
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -14,11 +14,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef CONFIG_USER_H
-#define CONFIG_USER_H
-
-#include "../../config.h"
+#pragma once
 
 // place overrides here
-
-#endif
