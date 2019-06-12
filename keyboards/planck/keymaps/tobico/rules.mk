@@ -1,0 +1,5 @@
+SRC += muse.c
+STENO_ENABLE = yes
+MOUSEKEY_ENABLE = no
+AUDIO_ENABLE = yes
+MIDI_ENABLE = no
