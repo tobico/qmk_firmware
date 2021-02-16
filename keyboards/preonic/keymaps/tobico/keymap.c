@@ -21,20 +21,20 @@
 #define ST_BOLT QK_STENO_BOLT
 #define ST_GEM  QK_STENO_GEMINI
 
-#define LN_LEFT LGUI(KC_LEFT)
-#define LN_RIGHT LGUI(KC_RIGHT)
-#define WD_LEFT LALT(KC_LEFT)
-#define WD_RIGHT LALT(KC_RIGHT)
+#define LN_LEFT KC_HOME
+#define LN_RIGHT KC_END
+#define WD_LEFT LCTL(KC_LEFT)
+#define WD_RIGHT LCTL(KC_RIGHT)
 
 #define S_LEFT LSFT(KC_LEFT)
 #define S_DOWN LSFT(KC_DOWN)
 #define S_UP LSFT(KC_UP)
 #define S_RIGHT LSFT(KC_RIGHT)
 
-#define S_LN_LEFT LSFT(LGUI(KC_LEFT))
-#define S_LN_RIGHT LSFT(LGUI(KC_RIGHT))
-#define S_WD_LEFT LSFT(LALT(KC_LEFT))
-#define S_WD_RIGHT LSFT(LALT(KC_RIGHT))
+#define S_LN_LEFT LSFT(KC_HOME)
+#define S_LN_RIGHT LSFT(KC_END)
+#define S_WD_LEFT LSFT(LCTL(KC_LEFT))
+#define S_WD_RIGHT LSFT(LCTL(KC_RIGHT))
 
 #define CTL_BSP CTL_T(KC_BSPC)
 
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |  Up  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Esc  | Alt  | GUI  |Lower |Space |Space |Raise | Trex | Left | Down |Right |
+ * |      | Esc  | GUI  | Alt  |Lower |Space |Space |Raise | Trex | Left | Down |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_preonic_grid( \
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,  \
   KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_UP,   KC_ENT,  \
-  _______, KC_ESC,  KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_SPC,  RAISE,   TREX,    KC_LEFT, KC_DOWN, KC_RIGHT  \
+  _______, KC_ESC,  KC_LGUI, KC_LALT, LOWER,   KC_SPC,  KC_SPC,  RAISE,   TREX,    KC_LEFT, KC_DOWN, KC_RIGHT  \
 ),
 
 /* Colemak
@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |  Up  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      | Esc  | Alt  | GUI  |Lower |Space |Space |Raise | Trex | Left | Down |Right |
+ * |      | Esc  | GUI  | Alt  |Lower |Space |Space |Raise | Trex | Left | Down |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_COLEMAK] = LAYOUT_preonic_grid( \
@@ -100,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC,  \
   KC_LCTL, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_UP,   KC_ENT,  \
-  _______, KC_ESC,  KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_SPC,  RAISE,   TREX,    KC_LEFT, KC_DOWN, KC_RIGHT  \
+  _______, KC_ESC,  KC_LGUI, KC_LALT, LOWER,   KC_SPC,  KC_SPC,  RAISE,   TREX,    KC_LEFT, KC_DOWN, KC_RIGHT  \
 ),
 
 /* Lower
